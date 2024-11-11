@@ -1,0 +1,820 @@
+@import "../../app.scss";
+:root {
+    --padding-left-page: 20vw;
+    --padding-right-page: 20vw;
+
+    --h1-font-size: 120px;
+    --h2-font-size: 40px;
+    --span-font-size: 20px;
+    --button-font-size: 18px;
+    // --size-asli: 1527px;
+
+    --h2-margin-top: -20px;
+    --button-margin-top: 20px;
+
+    --button-padding-top: 8px;
+    --button-padding-left: 20px;
+    --button-padding-right: 20px;
+    --button-padding-bottom: 8px;
+
+  }
+.hero{
+
+    // background-color: #76FBA6;
+    height: calc(100vh - 96px);
+    // background-color: aliceblue;
+    // height: 0%;
+    // width: 50%;
+    // background-color: aliceblue;
+    // padding-top: 72px;
+    // padding-left: 384px-36px; //348
+
+    // padding-left: 20vw;
+    // padding-right: 20vw;
+
+    // padding-right: 384px;
+    // padding-bottom: 96px;
+    padding-bottom: 10vh;
+    // z-index: 10;
+    // margin-bottom: 96px;
+    // position: absolute;
+
+    // @include mobile{
+    //     // overflow-x: hidden;
+    //     background-color: #76FBA6;
+    
+    .wrapperHero {
+        // max-width: auto;
+        // margin: auto;
+        // padding-left: 36px;
+        // padding-right: 36px;
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+        height: 100%;
+
+    .textContainer{
+            //         display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            h1{
+                // font-size: 125px;
+                // font-size: calc(1vw *8.2);
+                // font-size: calc(1vw *6.1);
+                // font-size: calc(100vw *0.061);
+
+
+                padding-left: var(--padding-left-page);
+                padding-right: var(--padding-right-page);
+
+                font-size: var(--h1-font-size);
+                font-weight: 1000;
+                letter-spacing: +2px;
+                // letter-spacing: calc(1vw *0.125);
+                
+                color: white; 
+                .green-text{
+                    color: #76FBA6;
+                }   
+                @media (max-width: 1395px) {//efeknya ke 1394 kebawah
+                    // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                        // font-size: 115px;
+                        font-size: calc(var(--h1-font-size) * 0.9);
+                        // font-size: calc(var(--h1-font-size) - 10%);
+                        padding-left: calc(var(--padding-left-page) * 0.9);
+                        padding-right: calc(var(--padding-right-page) * 0.9);
+                        font-weight: 1000;
+                        letter-spacing: +2px;
+                        // color: aqua; 
+                        // .green-text{
+                        //     color: aqua;
+                        // }        
+                }
+                @media (max-width: 1266px) {//efeknya ke 1265 kebawah
+                    // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                        // font-size: 115px;
+                        font-size: calc(var(--h1-font-size) * 0.8);
+                        padding-left: calc(var(--padding-left-page) * 0.8);
+                        padding-right: calc(var(--padding-right-page) * 0.8);
+                        font-weight: 1000;
+                        letter-spacing: +2px;
+                        // color: green; 
+                        // .green-text{
+                        //     color: aqua;
+                        // }         
+                }    
+                @media (max-width: 1049px) {//efeknya ke 1048 kebawah
+                    // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                        // font-size: 115px;
+                        font-size: calc(var(--h1-font-size) * 0.7);
+                        padding-left: calc(var(--padding-left-page) * 0.7);
+                        padding-right: calc(var(--padding-right-page) * 0.7);
+                        font-weight: 1000;
+                        letter-spacing: calc(2px * 0.9);
+                        // color: aqua; 
+                        // .green-text{
+                        //     color: aqua;
+                        // }         
+                }     
+                @media (max-width: 891px) {//efeknya ke 890 kebawah
+                    // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                        // font-size: 115px;
+                        font-size: calc(var(--h1-font-size) * 0.6);
+                        padding-left: calc(var(--padding-left-page) * 0.6);
+                        padding-right: calc(var(--padding-right-page) * 0.6);
+                        font-weight: 1000;
+                        letter-spacing: calc(2px * 0.3);
+                        // color: green; 
+                        // .green-text{
+                        //     color: aqua;
+                        // }         
+                }  
+                @media (max-width: 743px) {//efeknya ke 742 kebawah
+                    // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                        // font-size: 115px;
+                        font-size: calc(var(--h1-font-size) * 0.5);
+                        padding-left: calc(var(--padding-left-page) * 0.5);
+                        padding-right: calc(var(--padding-right-page) * 0.5);
+                        font-weight: 1000;
+                        letter-spacing: calc(2px * 0.3);
+                        // color: green; 
+                        // .green-text{
+                        //     color: aqua;
+                        // }         
+                }  
+                @media (max-width: 603px) {//efeknya ke 602 kebawah
+                    // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                        // font-size: 115px;
+                        font-size: calc(var(--h1-font-size) * 0.4);
+                        padding-left: calc(var(--padding-left-page) * 0.4);
+                        padding-right: calc(var(--padding-right-page) * 0.4);
+                        font-weight: 1000;
+                        letter-spacing: calc(2px * 0.2);
+                        // color: green; 
+                        // .green-text{
+                        //     color: aqua;
+                        // }         
+                }  
+                @media (max-width: 470px) {//efeknya ke 469 kebawah
+                    //iphone
+                    // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                        // font-size: 115px;
+                        font-size: calc(var(--h1-font-size) * 0.3);
+                        padding-left: calc(var(--padding-left-page) * 0.4);
+                        padding-right: calc(var(--padding-right-page) * 0.4);
+                        font-weight: 1000;
+                        display: flex;
+
+                        letter-spacing: calc(2px * 0.1);   
+                        text-align: center; 
+                        justify-content: center; 
+                }  
+                // @media (max-width: 365px) {//efeknya ke 364 kebawah
+                //     //iphone
+                //     // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                //         // font-size: 115px;
+                //         font-size: calc(var(--h1-font-size) * 0.25);
+                //         padding-left: calc(var(--padding-left-page) * 0.4);
+                //         padding-right: calc(var(--padding-right-page) * 0.4);
+                //         font-weight: 1000;
+                //         letter-spacing: calc(2px * 0.6);
+                //         color: green; 
+                //         .green-text{
+                //             color: aqua;
+                //         }         
+                // }  
+                
+            }
+            h2{
+            padding-left: var(--padding-left-page);
+            padding-right: var(--padding-right-page);
+            
+            margin-top: var(--h2-margin-top);
+            // margin-top: -(calc(1vh *2.2));
+
+            // font-size: 40px;
+            // font-size: calc(1vw *2.62);            
+            // font-size: calc(1vw *1.954);
+            // font-size: calc(100vw *0.01954);
+            font-size: var(--h2-font-size);
+
+            letter-spacing: +1px;
+            letter-spacing: calc(1px *0.45);
+
+            // letter-spacing: calc(1vw *0.065);
+            // letter-spacing: calc(100vw *0.00065);
+            font-weight: 700;
+            color: white;
+            .green-text2{
+                color: #76FBA6;
+                font-weight: 900;
+                }
+                @media (max-width: 1395px) {//efeknya ke 1394 kebawah
+                    // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                        font-size: calc(var(--h2-font-size));
+                        padding-left: calc(var(--padding-left-page) * 0.9);
+                        padding-right: calc(var(--padding-right-page) * 0.9);
+                        // font-weight: 1000; //400
+                        margin-top: calc(var(--h2-margin-top) * 0.9);
+                        // margin-top: calc(var(--h2-margin-top)*1.75);
+                        margin-top: calc(var(--h2-margin-top)*1.25);
+                        margin-bottom: calc(var(--h2-margin-top)*0);
+                        letter-spacing: calc(1px *0.4);
+                        // color: aqua; 
+                        // .green-text2{
+                        //     color: lightcoral;
+                        // }         
+                } 
+                @media (max-width: 1266px) {//efeknya ke 1265 kebawah
+                    // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                        font-size: calc(var(--h2-font-size));
+                        padding-left: calc(var(--padding-left-page) * 0.8);
+                        padding-right: calc(var(--padding-right-page) * 0.8);
+                        // font-weight: 1000; //400
+                        margin-top: calc(var(--h2-margin-top) * 0.8);
+                        margin-top: calc(var(--h2-margin-top)*1.5);
+                        margin-top: calc(var(--h2-margin-top)*1);
+                        margin-bottom: calc(var(--h2-margin-top)*0);
+                        letter-spacing: calc(1px *0.35);
+                        // color: aqua; 
+                        // .green-text2{
+                        //     color: lightcoral;
+                        // }         
+                } 
+                @media (max-width: 1049px) {//efeknya ke 1048 kebawah
+                    // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                        font-size: calc(var(--h2-font-size));
+                        padding-left: calc(var(--padding-left-page) * 0.7);
+                        padding-right: calc(var(--padding-right-page) * 0.7);
+                        // font-weight: 1000; //400
+                        // margin-top: calc(var(--h2-margin-top) * 0.7);
+                        margin-top: calc(var(--h2-margin-top)*0.75);
+                        margin-bottom: calc(var(--h2-margin-top)*0);
+                        letter-spacing: calc(1px *0.3);
+                        // color: aqua; 
+                        // .green-text2{
+                        //     color: lightcoral;
+                        // }         
+                }   
+                @media (max-width: 891px) {//efeknya ke 890 kebawah
+                    // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                        font-size: calc(var(--h2-font-size) * 0.95);
+                        padding-left: calc(var(--padding-left-page) * 0.6);
+                        padding-right: calc(var(--padding-right-page) * 0.6);
+                        // font-weight: 1000; //400
+                        // margin-top: calc(var(--h2-margin-top) * 0.6);
+                        margin-top: calc(var(--h2-margin-top)*0.5);
+                        margin-bottom: calc(var(--h2-margin-top)*0);
+                        letter-spacing: calc(1px *0.25);
+                        // color: aqua; 
+                        // .green-text2{
+                        //     color: lightcoral;
+                        // }         
+                } 
+                @media (max-width: 743px) {//efeknya ke 742 kebawah
+                    // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                        font-size: calc(var(--h2-font-size) * 0.85);
+                        padding-left: calc(var(--padding-left-page) * 0.5);
+                        padding-right: calc(var(--padding-right-page) * 0.5);
+                        // font-weight: 1000; //400
+                        // margin-top: calc(var(--h2-margin-top) * 0.5);
+                        margin-top: calc(var(--h2-margin-top)*0.25);
+                        margin-bottom: calc(var(--h2-margin-top)*0);
+                        letter-spacing: calc(1px *0.15);
+                        // color: aqua; 
+                        // .green-text2{
+                        //     color: lightcoral;
+                        // }         
+                } 
+                @media (max-width: 603px) {//efeknya ke 602 kebawah
+                    // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                        font-size: calc(var(--h2-font-size) * 0.75);
+                        padding-left: calc(var(--padding-left-page) * 0.4);
+                        padding-right: calc(var(--padding-right-page) * 0.4);
+                        // font-weight: 1000; //400
+                        // margin-top: calc(var(--h2-margin-top) * 0.4);
+                        margin-top: calc(var(--h2-margin-top)*0);
+                        margin-bottom: calc(var(--h2-margin-top)*0.25);
+                        letter-spacing: calc(1px *0.1);
+                        // margin-top: -10px; 
+                } 
+                @media (max-width: 509px) {//efeknya ke 508 kebawah
+                    // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                        font-size: calc(var(--h2-font-size) * 0.7);
+                        padding-left: calc(var(--padding-left-page) * 0.4);
+                        padding-right: calc(var(--padding-right-page) * 0.4);
+                        // font-weight: 1000; //400
+                        // margin-top: calc(var(--h2-margin-top) * 0.4);
+                        margin-top: calc(var(--h2-margin-top)*0.25);
+                        margin-bottom: calc(var(--h2-margin-top)*0.25);
+                        letter-spacing: calc(-1px *0.5);
+                        // margin-top: -10px;     
+                } 
+                @media (max-width: 458px) {//efeknya ke 457 kebawah
+                    // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                        font-size: calc(var(--h2-font-size) * 0.7);
+                        padding-left: calc(var(--padding-left-page) * 0.4);
+                        padding-right: calc(var(--padding-right-page) * 0.4);
+                        // font-weight: 1000; //400
+                        // margin-top: calc(var(--h2-margin-top) * 0.4);
+                        margin-top: calc(var(--h2-margin-top)*0.25);
+                        margin-bottom: calc(var(--h2-margin-top)*0.25);
+                        letter-spacing: calc(-1px *1);
+                        // margin-top: -10px;     
+                }           
+                ////////////////////////////////////////////////      
+                @media (max-width: 470px) {//efeknya ke 469 kebawah
+                    // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                        font-size: calc(var(--h2-font-size) * 0.7);
+                        padding-left: calc(var(--padding-left-page) * 0.4);
+                        padding-right: calc(var(--padding-right-page) * 0.4);
+                        // font-weight: 1000; //400
+                        // margin-top: calc(var(--h2-margin-top) * 0.4);
+                        margin-top: calc(var(--h2-margin-top)*0.25);
+                        margin-bottom: calc(var(--h2-margin-top)*0.25);
+                        letter-spacing: calc(-1px *1);
+                        text-align: center;
+                        // display: flex;
+                        justify-content: center;
+                        // margin-right: 20px;;
+                        
+                        // margin-top: -10px;     
+                } 
+                // @media (max-width: 438px) {//efeknya ke 437 kebawah
+                //     // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                //         font-size: calc(var(--h2-font-size) * 0.65);
+                //         padding-left: calc(var(--padding-left-page) * 0.4);
+                //         padding-right: calc(var(--padding-right-page) * 0.4);
+                //         // font-weight: 1000; //400
+                //         // margin-top: calc(var(--h2-margin-top) * 0.4);
+                //         margin-top: calc(var(--h2-margin-top)*0.225);
+                //         margin-bottom: calc(var(--h2-margin-top)*0.25);
+                //         letter-spacing: calc(-1px *1);
+                //         // margin-top: -10px;     
+                // } 
+                // @media (max-width: 409px) {//efeknya ke      kebawah
+                //     // font-weight: 600;
+                //     // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                //         font-size: calc(var(--h2-font-size) * 0.6);
+                //         padding-left: calc(var(--padding-left-page) * 0.4);
+                //         padding-right: calc(var(--padding-right-page) * 0.4);
+                //         // font-weight: 1000; //400
+                //         // margin-top: calc(var(--h2-margin-top) * 0.4);
+                //         margin-top: calc(var(--h2-margin-top)*0.225);
+                //         margin-bottom: calc(var(--h2-margin-top)*0.25);
+
+                //         letter-spacing: calc(-1px *1);
+                //         // margin-top: -10px;     
+                // } 
+                // @media (max-width: 379px) {//efeknya ke 378 kebawah
+                //     // font-weight: 500;
+                //     // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                //         font-size: calc(var(--h2-font-size) * 0.6);
+                //         padding-left: calc(var(--padding-left-page) * 0.4);
+                //         padding-right: calc(var(--padding-right-page) * 0.4);
+                //         // font-weight: 1000; //400
+                //         margin-top: calc(var(--h2-margin-top)*0.225);
+                //         margin-bottom: calc(var(--h2-margin-top)*0.25);
+                //         // color: lightcoral;
+                //         letter-spacing: calc(-1px *1.5);
+                //         // margin-top: -10px;     
+                // } 
+            }
+        .description{
+            padding-left: var(--padding-left-page);
+            padding-right: var(--padding-right-page);
+            display: block; /* mengubah span menjadi block agar padding berfungsi */
+            font-weight: 400;
+            font-size: var(--span-font-size);
+            // font-size: calc(1vw *1.31);
+            // font-size: calc(1vw *0.976);
+            // font-size: calc(100vw *0.00976);
+
+            color: white;
+            // line-height: calc(1vw *1.96);
+            @media (max-width: 1395px) {//efeknya ke 1394 kebawah
+                // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                    // font-size: calc(var(--span-font-size) * 0.9);
+                    padding-left: calc(var(--padding-left-page) * 0.9);
+                    padding-right: calc(var(--padding-right-page) * 0.9);
+                    // font-weight: 1000; //400
+                    // letter-spacing: +1px;
+                    // color: aqua;         
+            }  
+            @media (max-width: 1266px) {//efeknya ke 1265 kebawah
+                // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                    // font-size: calc(var(--span-font-size) * 0.8);
+                    padding-left: calc(var(--padding-left-page) * 0.8);
+                    padding-right: calc(var(--padding-right-page) * 0.8);
+                    // font-weight: 1000; //400
+                    // letter-spacing: +1px;
+                    // color: aqua;         
+            }  
+            @media (max-width: 1049px) {//efeknya ke 1048 kebawah
+                // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                    // font-size: calc(var(--span-font-size) * 0.7);
+                    padding-left: calc(var(--padding-left-page) * 0.7);
+                    padding-right: calc(var(--padding-right-page) * 0.7);
+                    // font-weight: 1000; //400
+                    // letter-spacing: +1px;
+                    // color: aqua;         
+            }  
+            @media (max-width: 891px) {//efeknya ke 890 kebawah
+                // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                    // font-size: calc(var(--span-font-size) * 0.6);
+                    padding-left: calc(var(--padding-left-page) * 0.6);
+                    padding-right: calc(var(--padding-right-page) * 0.6);
+                    // font-weight: 1000; //400
+                    // letter-spacing: +1px;
+                    // color: aqua;       
+            }  
+            @media (max-width: 743px) {//efeknya ke 742 kebawah
+                // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                    // font-size: calc(var(--span-font-size) * 0.5);
+                    padding-left: calc(var(--padding-left-page) * 0.5);
+                    padding-right: calc(var(--padding-right-page) * 0.5);
+                    // font-weight: 1000; //400
+                    // letter-spacing: +1px;
+                    // color: aqua;       
+            }  
+            // @media (max-width: 603px) {//efeknya ke 602 kebawah
+            //     // @media (max-width: calc(var(--size-asli) * 0.8)) {
+            //         font-size: calc(var(--span-font-size) * 0.4);
+            //         padding-left: calc(var(--padding-left-page) * 0.4);
+            //         padding-left: calc(var(--padding-right-page) * 0.4);
+            //         // font-weight: 1000; //400
+            //         // letter-spacing: +1px;
+            //         color: aqua; 
+            //         .green-text2{
+            //             color: lightcoral;
+            //         }         
+            // }              
+            @media (max-width: 603px) {//efeknya ke 602 kebawah
+                // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                    // font-size: calc(var(--span-font-size) * 0.5);
+                    padding-left: calc(var(--padding-left-page) * 0.4);
+                    padding-right: calc(var(--padding-right-page) * 0.4);
+                    // font-weight: 1000; //400
+                    // letter-spacing: +1px;       
+            }  
+            @media (max-width: 470px) {//efeknya ke 469 kebawah
+                // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                    // font-size: calc(var(--span-font-size) * 0.5);
+                    padding-left: calc(var(--padding-left-page) * 0.4);
+                    padding-right: calc(var(--padding-right-page) * 0.4);
+                    // font-weight: 1000; //400
+                    // letter-spacing: +1px;     
+                    text-align: center; 
+            }  
+            }
+        .kontak{
+            padding-left: var(--padding-left-page);
+            padding-right: var(--padding-right-page);
+
+            margin-top: 20px;
+            margin-top: var(--button-margin-top);
+            a{
+                // padding-top: 8px;
+                // padding-left: 20px;
+                // padding-right: 20px;
+                // padding-bottom: 8px;
+                padding-top: var(--button-padding-top);
+                padding-left: var(--button-padding-left);
+                padding-right: var(--button-padding-right);
+                padding-bottom: var(--button-padding-bottom);
+
+                background-color: #76FBA6;
+                border: 1px solid #111111;
+                border-radius: 4px;
+                color: #111111;
+                font-weight: 600;
+                // font-size: 18px;            
+                font-size: var(--button-font-size);
+
+            }
+            @media (max-width: 1395px) {//efeknya ke 1394 kebawah
+                // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                    padding-left: calc(var(--padding-left-page) * 0.9);
+                    padding-right: calc(var(--padding-right-page) * 0.9);
+                    margin-top: calc(var(--button-margin-top) * 0.9);
+                    a{
+                        // background-color: lightcoral;
+                        // font-size: calc(var(--button-font-size) - 10%);
+                        // font-size: calc(var(--button-font-size) * 0.9);
+                        font-size: calc(var(--button-font-size));
+
+                        // padding-top: calc(var(--button-padding-top) * 0.9);
+                        // padding-left: calc(var(--button-padding-left) * 0.9);
+                        // padding-right: calc(var(--button-padding-right) * 0.9);
+                        // padding-bottom: calc(var(--button-padding-bottom) * 0.9);
+                        padding-top: calc(var(--button-padding-top));
+                        padding-left: calc(var(--button-padding-left));
+                        padding-right: calc(var(--button-padding-right));
+                        padding-bottom: calc(var(--button-padding-bottom));
+                    }     
+            } 
+            @media (max-width: 1266px) {//efeknya ke 1265 kebawah
+                // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                    padding-left: calc(var(--padding-left-page) * 0.8);
+                    padding-right: calc(var(--padding-right-page) * 0.8);
+                    margin-top: calc(var(--button-margin-top) * 0.8);
+                    a{
+                        // background-color: lightcoral;
+                        // font-size: calc(var(--button-font-size) - 10%);
+                        // font-size: calc(var(--button-font-size) * 0.8);
+                        font-size: calc(var(--button-font-size));
+
+                        // padding-top: calc(var(--button-padding-top) * 0.8);
+                        // padding-left: calc(var(--button-padding-left) * 0.8);
+                        // padding-right: calc(var(--button-padding-right) * 0.8);
+                        // padding-bottom: calc(var(--button-padding-bottom) * 0.8);                        
+                        padding-top: calc(var(--button-padding-top));
+                        padding-left: calc(var(--button-padding-left));
+                        padding-right: calc(var(--button-padding-right));
+                        padding-bottom: calc(var(--button-padding-bottom));
+                    }     
+            } 
+            @media (max-width: 1049px) {//efeknya ke 1048 kebawah
+                // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                    padding-left: calc(var(--padding-left-page) * 0.7);
+                    padding-right: calc(var(--padding-right-page) * 0.7);
+                    margin-top: calc(var(--button-margin-top) * 0.8);
+                    a{
+                        // background-color: lightcoral;
+                        // font-size: calc(var(--button-font-size) - 10%);
+                        // font-size: calc(var(--button-font-size) * 0.7);
+                        // font-size: calc(var(--button-font-size) * 0.8);
+                        font-size: calc(var(--button-font-size));
+
+                        // padding-top: calc(var(--button-padding-top) * 0.7);
+                        // padding-left: calc(var(--button-padding-left) * 0.7);
+                        // padding-right: calc(var(--button-padding-right) * 0.7);
+                        // padding-bottom: calc(var(--button-padding-bottom) * 0.7);
+                        padding-top: calc(var(--button-padding-top));
+                        padding-left: calc(var(--button-padding-left));
+                        padding-right: calc(var(--button-padding-right));
+                        padding-bottom: calc(var(--button-padding-bottom));
+                    }     
+            } 
+            @media (max-width: 891px) {//efeknya ke 890 kebawah
+                // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                    padding-left: calc(var(--padding-left-page) * 0.6);
+                    padding-right: calc(var(--padding-right-page) * 0.6);
+                    margin-top: calc(var(--button-margin-top) * 0.8);
+                    a{
+                        // background-color: lightcoral;
+                        // font-size: calc(var(--button-font-size) - 10%);
+                        // font-size: calc(var(--button-font-size) * 0.6);
+                        font-size: calc(var(--button-font-size));
+                        // padding-top: calc(var(--button-padding-top) * 0.6);
+                        // padding-left: calc(var(--button-padding-left) * 0.6);
+                        // padding-right: calc(var(--button-padding-right) * 0.6);
+                        // padding-bottom: calc(var(--button-padding-bottom) * 0.6);
+                        padding-top: calc(var(--button-padding-top));
+                        padding-left: calc(var(--button-padding-left));
+                        padding-right: calc(var(--button-padding-right));
+                        padding-bottom: calc(var(--button-padding-bottom));
+                    }     
+            } 
+            @media (max-width: 743px) {//efeknya ke 742 kebawah
+                // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                    padding-left: calc(var(--padding-left-page) * 0.5);
+                    padding-right: calc(var(--padding-right-page) * 0.5);
+                    margin-top: calc(var(--button-margin-top) * 0.8);
+                    a{
+                        // background-color: lightcoral;
+                        // font-size: calc(var(--button-font-size) - 10%);
+                        // font-size: calc(var(--button-font-size) * 0.5);
+                        font-size: calc(var(--button-font-size));
+
+                        // padding-top: calc(var(--button-padding-top) * 0.5);
+                        // padding-left: calc(var(--button-padding-left) * 0.5);
+                        // padding-right: calc(var(--button-padding-right) * 0.5);
+                        // padding-bottom: calc(var(--button-padding-bottom) * 0.5);                        
+                        
+                        padding-top: calc(var(--button-padding-top));
+                        padding-left: calc(var(--button-padding-left));
+                        padding-right: calc(var(--button-padding-right));
+                        padding-bottom: calc(var(--button-padding-bottom));
+                    }     
+            } 
+            // @media (max-width: 603px) {//efeknya ke 602 kebawah
+            //     // @media (max-width: calc(var(--size-asli) * 0.8)) {
+            //         padding-left: calc(var(--padding-left-page) * 0.4);
+            //         padding-left: calc(var(--padding-right-page) * 0.4);
+            //         margin-top: calc(var(--button-margin-top) * 0.4);
+            //         a{
+            //             background-color: lightcoral;
+            //             // font-size: calc(var(--button-font-size) - 10%);
+            //             font-size: calc(var(--button-font-size) * 0.4);
+            //             padding-top: calc(var(--button-padding-top) * 0.4);
+            //             padding-left: calc(var(--button-padding-left) * 0.4);
+            //             padding-right: calc(var(--button-padding-right) * 0.4);
+            //             padding-bottom: calc(var(--button-padding-bottom) * 0.4);
+            //         }     
+            // }             
+            @media (max-width: 603px) {//efeknya ke 602 kebawah
+                // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                    padding-left: calc(var(--padding-left-page) * 0.4);
+                    padding-right: calc(var(--padding-right-page) * 0.4);
+                    margin-top: calc(var(--button-margin-top) * 0.8);
+                    a{
+                        // font-size: calc(var(--button-font-size) * 0.4);
+                        font-size: calc(var(--button-font-size));
+                        // padding-top: calc(var(--button-padding-top) * 0.4);
+                        // padding-left: calc(var(--button-padding-left) * 0.4);
+                        // padding-right: calc(var(--button-padding-right) * 0.4);
+                        // padding-bottom: calc(var(--button-padding-bottom) * 0.4); 
+
+                        padding-top: calc(var(--button-padding-top));
+                        padding-left: calc(var(--button-padding-left));
+                        padding-right: calc(var(--button-padding-right));
+                        padding-bottom: calc(var(--button-padding-bottom));
+                    }     
+            } 
+            @media (max-width: 470px) {//efeknya ke 469 kebawah
+                // @media (max-width: calc(var(--size-asli) * 0.8)) {
+                    padding-left: calc(var(--padding-left-page) * 0.4);
+                    padding-right: calc(var(--padding-right-page) * 0.4);
+                    margin-top: calc(var(--button-margin-top) * 0.8);
+                    text-align: center;
+                    a{
+                        // font-size: calc(var(--button-font-size) * 0.4);
+                        font-size: calc(var(--button-font-size));
+                        // padding-top: calc(var(--button-padding-top) * 0.4);
+                        // padding-left: calc(var(--button-padding-left) * 0.4);
+                        // padding-right: calc(var(--button-padding-right) * 0.4);
+                        // padding-bottom: calc(var(--button-padding-bottom) * 0.4); 
+
+                        padding-top: calc(var(--button-padding-top));
+                        padding-left: calc(var(--button-padding-left));
+                        padding-right: calc(var(--button-padding-right));
+                        padding-bottom: calc(var(--button-padding-bottom));
+                    }     
+            } 
+        }
+    }
+    // @media (max-width: 1394px) {
+    //     h1{
+    //         font-size: 125px;
+    //         font-weight: 1000;
+    //         letter-spacing: +2px;
+    //         color: aqua; 
+    //         .green-text{
+    //             color: aqua;
+    //         }         
+    //     }
+    // }
+    }
+    //     }
+    // margin-left: 125px;
+    // @include mobile{
+    //     height: calc(100% - 96px);
+    //     width: calc(100%);
+    //     // width: 50%;
+    //     // max-width: auto;
+    //     justify-content: end;
+    //     font-size: 20px;
+    //     // width: 300px;
+    //     background-color: aliceblue;
+        
+    // }
+    // .wrapper{
+    //     max-width: auto;
+    //     // margin: auto;
+    //     height: 100%;
+    //     // padding-left: 96px;
+    //     // padding-right: 96px;
+    //     @include mobile{
+    //         height: 100%;
+    //         font-size: 20px;
+    //         // padding-left: 300px;
+    //         background-color: #111111;
+    //         float: right;
+
+    //     }
+    //     .textContainer{
+    //         height: 100%;
+    //         width: auto;
+    //         display: flex;
+    //         flex-direction: column;
+    //         justify-content: center;
+    //         // background-color: #76FBA6;
+
+    //         @include mobile{
+    //             // height: 50%;
+    //             height: auto;
+    //             width: auto;
+    //             background-color: brown;
+    //             // gap: 24px;
+
+    //             }
+    //     }
+    //     h1{
+    //         // color: #76FBA6;
+    //         font-size: 125px;
+    //         font-weight: 1000;
+    //         letter-spacing: +2px;
+    //         color: white;
+    //         @include mobile{
+    //             height: 50%;
+    //             font-size: 60px;
+    //             width: 300px;
+    //             // margin-bottom: 24px;
+    //         }
+
+    //         .green-text{
+    //             color: #76FBA6;
+    //         }
+    //     }
+    //     h2{
+    //         // padding-top: -10px;
+    //         padding-bottom: 20px;
+    //         font-size: 40px;
+    //         letter-spacing: +1px;
+    //         font-weight: 400;
+    //         color: white;
+    //         @include mobile{
+    //             // height: 50%;
+    //             font-size: 30px;
+    //             width: 300px;
+    //         }
+
+    //         .green-text2{
+    //             color: #76FBA6;
+    //             font-weight: 900;
+
+    //         }
+    //     }
+    //     .description{
+    //         font-weight: 400;
+    //         font-size: 20px;
+    //         padding-bottom: 20px;
+    //         color: white;
+    //         @include mobile{
+    //             // height: 50%;
+    //             font-size: 20px;
+    //             width: 300px;
+                
+    //         }
+
+    //     }
+    //     .kontak{
+    //         a{
+    //             padding-top: 8px;
+    //             padding-left: 20px;
+    //             padding-right: 20px;
+    //             padding-bottom: 8px;
+        
+    //             background-color: #76FBA6;
+    //             border: 1px solid #111111;
+    //             border-radius: 4px;
+    //             color: #111111;
+    //             font-weight: 600;
+    //             font-size: 18px;
+    //         }
+    //     }
+    // //     button{
+    // //         padding-top: 8px;
+    // //         padding-left: 20px;
+    // //         padding-right: 20px;
+    // //         padding-bottom: 8px;
+    
+    // //         background-color: #76FBA6;
+    // //         border: 1px solid #111111;
+    // //         border-radius: 4px;
+    // //         color: #111111;
+    // //         font-weight: 600;
+    // //         font-size: 18px;
+
+    
+    // // }
+    // }
+}
+// .kontak{
+//         button{
+//             padding-top: 8px;
+//             padding-left: 20px;
+//             padding-right: 20px;
+//             padding-bottom: 8px;
+    
+//             background-color: #76FBA6;
+//             border: 1px solid #111111;
+//             border-radius: 4px;
+//             color: #111111;
+//             font-weight: 600;
+//             font-size: 18px;
+//         }
+//     }
+    // .waterdrop-grid {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     padding-left: 950px;
+    //     padding-top: 100px;
+    //     z-index: 0; /* Places it behind other content */
+    //   }
+
+// h1{
+//     color: #76FBA6;
+// }

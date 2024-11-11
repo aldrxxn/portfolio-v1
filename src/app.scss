@@ -1,0 +1,38 @@
+html{
+    ::selection {
+        background-color: #76FBA6; /* Hijau */
+        color: black; /* Warna teks */
+      }
+    }
+
+*{
+    padding: 0;
+    margin: 0;
+    // box-sizing: border-box;
+    // font-family: "DM Sans", "Helvetica Neue", Helvetica, Arial,;
+    // font-family: "DM Sans", sans-serif;
+    font-family: "DM Sans", "poppins";
+}
+
+body{
+    background-color: #111111;
+    color: #EBECF2;
+    // padding-top: 96px;
+}
+
+a{
+    // text-decoration: none;
+    // color: inherit;
+}
+section{
+    // height: 100vh;
+}
+.pengalaman{
+    // height:120vh
+}
+
+@mixin mobile{
+    @media (max-width:738px){
+        @content;
+    }
+}

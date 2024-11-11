@@ -1,0 +1,64 @@
+:root {
+    --margin-left-page: 20vw;
+    --margin-right-page: 20vw;
+    --margin-about-page: 20vh;
+    --h1-font-size: 120px;
+}
+
+.projects{
+    .title{
+        .garis-projects{
+            width: 100%;
+            margin: auto;
+            border-color: white;         
+        }
+        margin-left: var(--padding-left-page);
+        margin-right: var(--padding-right-page);
+        display: flex;
+        font-size: var(--h1-font-size);
+        font-weight: 1000;
+        letter-spacing: +2px;
+        gap: 40px;//gap judul ke hr
+        color: white;
+        .green-projects-text{
+            color: #76FBA6;
+        }
+    }
+}
+// .projects {
+//     padding-left: 384px;
+//     padding-right: 384px;
+//     .title {
+//         // color: aqua;
+//         // justify-content: space-between; /* Untuk membuat garis sejajar dengan teks */
+//         display: flex;
+//         // flex-direction: column; /* flex-end diganti dengan column agar garis bisa sejajar dengan text */
+//         // align-items: center; /* agar text dan garis berada di sebelah kanan */
+//         font-size: 125px;
+//         font-weight: 1000;
+//         letter-spacing: +2px;
+//         gap: 40px;
+//         color: white;
+//         .green-text{
+//             color: #76FBA6;
+//         }
+//         hr {
+//             width: calc(100vw - 192px - 192px - 400px - 96px);
+//             flex-direction: right;
+//             position: relative;
+//             margin: auto;
+//             border-color: white;
+
+//         }
+//     }
+// }
+// .title {
+//     font-size: 36px;
+// }
+// .BounceCard:hover img {
+
+// }
+// BouncyCardsFeatures{
+//     margin-left: 30vh;
+//     // margin-right: var(--padding-right-page);
+// }

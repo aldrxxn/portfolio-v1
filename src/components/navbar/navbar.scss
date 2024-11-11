@@ -1,0 +1,55 @@
+@import "../../app.scss";
+
+body {
+  padding-top: 96px; /* Add padding equal to the navbar height */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  height: 96px;
+  background-color: rgba(17, 17, 17, 0.4);
+  transition: background-color 0.3s;
+  user-select: none;
+}
+
+.wrapperNavbar {
+  max-width: auto;
+  margin: auto;
+  // padding-left: 36px;
+  padding-left: calc(20vw * 0.4);
+  padding-right: 36px;
+  padding-right: calc(20vw * 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+
+  img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.resume {
+  a {
+    padding-top: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    background-color: inherit;
+    border: 1px solid #76FBA6;
+    border-radius: 4px;
+    color: #76FBA6;
+    font-weight: 600;
+  }
+}

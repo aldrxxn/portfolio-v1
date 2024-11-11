@@ -1,0 +1,256 @@
+.description { grid-area: description; }
+.work { grid-area: work; }
+.fun { grid-area: fun; }
+
+:root {
+    --margin-left-page: 20vw;
+    --margin-right-page: 20vw;
+    --margin-about-page: 20vh;
+    --h1-font-size: 120px;
+
+}
+.about {
+    // height: calc(100vh - 96px);
+    margin-bottom: var(--margin-about-page);
+        .title {
+            margin-left: var(--padding-left-page);
+            margin-right: var(--padding-right-page);
+            display: flex;
+            font-size: var(--h1-font-size);
+            font-weight: 1000;
+            letter-spacing: +2px;
+            gap: 40px;//gap judul ke hr
+            color: white;
+            .green-about-text{
+                color: #76FBA6;
+            }
+            .garis1{
+                width: 100%;
+                margin: auto;
+                border-color: white;
+
+            }
+            @media (max-width: 1395px) {//efeknya ke 1394 kebawah
+                    font-size: calc(var(--h1-font-size) * 0.9);
+                    // text-align: center;
+                    // justify-content: center;
+                    font-weight: 1000;
+                    letter-spacing: +2px;     
+                    // .garis1 {
+                    //     display: none; /* menghilangkan hr */
+                    // }
+            }
+            @media (max-width: 1266px) {//efeknya ke 1265 kebawah
+                    font-size: calc(var(--h1-font-size) * 0.8);
+                    text-align: center;
+                    justify-content: center;
+                    font-weight: 1000;
+                    letter-spacing: +2px;   
+                    .garis1 {
+                        display: none; /* menghilangkan hr */
+                    }     
+            }    
+            @media (max-width: 1049px) {//efeknya ke 1048 kebawah
+                    font-size: calc(var(--h1-font-size) * 0.7);
+                    font-weight: 1000;
+                    letter-spacing: calc(2px * 0.9);      
+            }     
+            @media (max-width: 891px) {//efeknya ke 890 kebawah
+                    font-size: calc(var(--h1-font-size) * 0.6);
+                    font-weight: 1000;
+                    letter-spacing: calc(2px * 0.3);   
+            }  
+            @media (max-width: 743px) {//efeknya ke 742 kebawah
+                    font-size: calc(var(--h1-font-size) * 0.5);
+                    font-weight: 1000;
+                    letter-spacing: calc(2px * 0.3);     
+            }  
+            @media (max-width: 603px) {//efeknya ke 602 kebawah
+                    font-size: calc(var(--h1-font-size) * 0.4);
+                    font-weight: 1000;
+                    letter-spacing: calc(2px * 0.2);   
+            }  
+            @media (max-width: 470px) {//efeknya ke 469 kebawah
+                //iphone
+                    font-size: calc(var(--h1-font-size) * 0.3);
+                    font-weight: 1000;
+                    // letter-spacing: calc(2px * 0.1);   
+                    letter-spacing: calc(1px * 0.1);   
+            }  
+
+        }
+    .grid-container{
+        margin-left: var(--padding-left-page);
+        margin-right: var(--padding-right-page);
+        display: grid;
+        gap: 20px;
+        grid-template-areas:
+          'description  description work'
+          'description description fun';
+          
+        @media (max-width: 1395px) {//efeknya ke 1394 kebawah
+            // display: flex;
+            // flex-wrap: wrap;
+            margin-left: calc(var(--padding-left-page) * 0.9);
+            margin-right: calc(var(--padding-right-page) * 0.9);
+            // .hapus{
+            //     display: none;
+            // }
+        }
+        @media (max-width: 1266px) {//efeknya ke 1265 kebawah
+            margin-left: calc(var(--padding-left-page) * 0.8);
+            margin-right: calc(var(--padding-right-page) * 0.8);     
+            display: flex;
+            flex-wrap: wrap; 
+            text-align: center;
+            justify-content: center;
+        }  
+        @media (max-width: 1049px) {//efeknya ke 1048 kebawah
+            margin-left: calc(var(--padding-left-page) * 0.7);
+            margin-right: calc(var(--padding-right-page) * 0.7);     
+        }  
+        @media (max-width: 891px) {//efeknya ke 890 kebawah
+            margin-left: calc(var(--padding-left-page) * 0.6);
+            margin-right: calc(var(--padding-right-page) * 0.6);     
+        }  
+        @media (max-width: 743px) {//efeknya ke 742 kebawah
+            margin-left: calc(var(--padding-left-page) * 0.5);
+            margin-right: calc(var(--padding-right-page) * 0.5);     
+        }            
+        @media (max-width: 603px) {//efeknya ke 602 kebawah
+            margin-left: calc(var(--padding-left-page) * 0.4);
+            margin-right: calc(var(--padding-right-page) * 0.4);   
+        }  
+        @media (max-width: 470px) {//efeknya ke 469 kebawah
+            margin-left: calc(var(--padding-left-page) * 0.4);
+            margin-right: calc(var(--padding-right-page) * 0.4);   
+            // text-align: center; 
+            // justify-content: center;
+        }  
+        .description{
+        margin-right: 25px;
+        // text-align: center; 
+
+        p {
+            margin-bottom: 12px; /* Untuk memberikan ruang di bawah setiap paragraf */
+            // @media (max-width: 470px) {//efeknya ke 469 kebawah 
+            //     justify-content: center;
+            //     text-align: center; 
+            // }  
+        }
+        // @media (max-width: 470px) {//efeknya ke 469 kebawah 
+        //     justify-content: center;
+        //     text-align: center; 
+        // } 
+        font-weight: 400;
+        font-size: 20px;
+        color: white;
+    //     @media (max-width: 1395px) {//efeknya ke 1394 kebawah
+    //         // display: flex;
+    //         // flex-wrap: wrap;
+    //         // margin-left: calc(var(--padding-left-page) * 0.9);
+    //         // margin-right: calc(var(--padding-right-page) * 0.9);
+    // }
+        }
+        .work{
+            .work-container{
+                .work-title{
+                    display: flex; //biar sebelahan sama logo
+                    align-items: center; // biar judul dan logo setara
+                    margin-bottom: 10px;
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                    h3{
+                        font-weight: 900;
+                        font-size: 24px;
+                        padding-left: 12px;
+                    }
+                    @media (max-width: 1266px) {//efeknya ke 1265 kebawah 
+                        justify-content: center;
+                    }  
+                }
+                .work-skill{
+                    display: flex; //biar semua skill bisa sebelahan
+                    flex-wrap: wrap;
+                    .workSkills{
+                        padding-left: 12px; // isi dalam
+                        padding-right: 12px;
+                        padding-top: 6px;
+                        padding-bottom: 6px;
+                        border-radius: 3.75px;
+                        color: white;
+                        font-weight: 900;
+                        margin-right: 8px; // gap luar
+                        background-color: #232323;
+                        margin-bottom: 12px;
+                        font-size: 18px;
+                        // flex: 1;
+                        // @media (max-width: 1266px) {//efeknya ke 1265 kebawah 
+                        //     font-weight: 700;
+                        // } 
+                    }
+                    @media (max-width: 1266px) {//efeknya ke 1265 kebawah 
+                        justify-content: center;
+                        // font-size: 300;
+                    } 
+                }
+            }
+            // margin-left: 25px;
+
+        }
+        .fun{
+            .fun-container{
+                .fun-title{
+                    display: flex; //biar sebelahan sama logo
+                    align-items: center; // biar judul dan logo setara
+                    margin-bottom: 10px;
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                    h3{
+                        font-weight: 900;
+                        font-size: 24px;
+                        padding-left: 12px;
+                    }
+                    @media (max-width: 1266px) {//efeknya ke 1265 kebawah 
+                        justify-content: center;
+                    }  
+                }
+                .fun-skill{
+                    display: flex; //biar semua skill bisa sebelahan
+                    flex-wrap: wrap;
+                    .funSkills{
+                        padding-left: 12px; // isi dalam
+                        padding-right: 12px;
+                        padding-top: 6px;
+                        padding-bottom: 6px;
+                        border-radius: 3.75px;
+                        color: white;
+                        font-weight: 900;
+                        margin-right: 8px; // gap luar
+                        background-color: #232323;
+                        margin-bottom: 12px;
+                        font-size: 18px;
+                        // flex: 1;
+                        // @media (max-width: 1266px) {//efeknya ke 1265 kebawah 
+                        //     font-weight: 700;
+                        // } 
+                    }
+                    @media (max-width: 1266px) {//efeknya ke 1265 kebawah 
+                        justify-content: center;
+                        // font-size: 300;
+                    } 
+                }
+            }
+            // margin-left: 25px;
+
+        }
+    }
+
+
+
+
+}

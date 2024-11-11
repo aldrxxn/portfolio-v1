@@ -1,0 +1,109 @@
+.experiences {
+    padding-left: 384px;
+    padding-right: 384px;
+
+    .title {
+        // color: aqua;
+        // justify-content: space-between; /* Untuk membuat garis sejajar dengan teks */
+        display: flex;
+        // flex-direction: column; /* flex-end diganti dengan column agar garis bisa sejajar dengan text */
+        // align-items: center; /* agar text dan garis berada di sebelah kanan */
+        font-size: 125px;
+        font-weight: 1000;
+        letter-spacing: +2px;
+        gap: 40px;
+        color: white;
+        .green-text{
+            color: #76FBA6;
+        }
+        hr {
+            width: calc(100vw - 192px - 192px - 400px - 96px);
+            flex-direction: right;
+            position: relative;
+            margin: auto;
+            border-color: white;
+
+        }
+    }
+    .experience-company {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+        // padding-bottom: 10px;
+
+        .company-name{
+            font-weight: 900;
+            // letter-spacing: +1px;
+            font-size: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // padding-bottom: 10px;
+        }
+        .company-date{
+            font-weight: 300;
+            font-size: 18px;
+            color: white;
+        }
+    }
+    .experience-role{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+        // padding-bottom: 10px;
+
+        .role-detail{
+            font-weight: 800;
+            // letter-spacing: +1px;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // padding-bottom: 10px;
+            color: #76FBA6;
+        }
+        .role-city{
+            font-weight: 300;
+            font-size: 18px;
+            color: white;
+        }
+    }
+    .experience-desc{
+        font-weight: 300;
+        font-size: 18px;
+        padding-right: 200px;
+        color: white;
+        padding-bottom: 10px;
+
+    }
+    .experience-skill{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        // background-color: #76FBA6;
+        padding-bottom: 10px;
+
+
+        .skill-detail{
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            border-radius: 3.75px;
+            color: white;
+            font-weight: 900;
+            margin-right: 8px;
+            background-color: #232323;
+            margin-bottom: 10px;
+            font-size: 18px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    hr{
+        padding-bottom: 24px;
+        border-color: white;
+    }
+}
